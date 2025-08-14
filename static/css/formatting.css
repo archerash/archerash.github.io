@@ -1,0 +1,15 @@
+high 
+{
+    color: rgb(71, 175, 114);
+}
+
+code 
+{
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px; 
+    padding: 4px 8px;
+    font-family: 'Courier New', Courier, monospace; 
+    color: #ebebeb; 
+}
+

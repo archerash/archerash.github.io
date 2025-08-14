@@ -1,0 +1,118 @@
+#bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+#bar a {
+  color: #4ade80;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  margin: 1px;
+}
+
+#bar #right {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/static/backgrounds/home/top-background.jpeg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: 1;
+}
+
+#main h1 {
+  text-align: center;
+  font-family: "Montserrat-ExtraLight", "Arial Narrow", Arial, sans-serif;
+  font-size: 45px;
+  margin-top: 100px;
+  color: rgba(42, 252, 130);
+  position: relative;
+  z-index: 3;
+}
+
+#main #desc {
+  text-align: center;
+  font-family: "Montserrat-ExtraLight", "Arial Narrow", sans-serif;
+  font-size: 30px;
+  color: rgba(219, 219, 219, 0.9);
+  position: relative;
+  z-index: 3;
+}
+
+#main #credit {
+  font-size: 15px;
+  color: rgb(172, 172, 172);
+  font-family: "Montserrat-ExtraLight", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  left: 3px;
+  bottom: 0px;
+  z-index: 3;
+}
+
+#main #credit a {
+  color: rgb(42, 252, 130);
+}
+
+#info h1 {
+  color: rgb(42, 252, 130);
+  font-size: 40px;
+  font-family: "Montserrat-ExtraLight", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+#info h2 {
+  color: rgb(42, 252, 130);
+  font-size: 25px;
+  font-family: "Montserrat-ExtraLight", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+#info p {
+  color: white;
+  font-size: 20px;
+  font-family: "Montserrat-ExtraLight", "Arial Narrow", Arial, sans-serif;
+  padding: 5px;
+  text-align: center;
+}
+
+#bottom {
+  position: relative;
+  margin-bottom: 5px;
+  margin-top: 35px;
+  width: 100%;
+  height: 130px;
+  padding: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+}

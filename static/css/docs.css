@@ -1,0 +1,83 @@
+
+/* docs */
+
+body, html
+{
+    background-color: rgb(43, 43, 43);
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, li
+{
+    font-family: 'Montserrat-ExtraLight', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1
+{
+    color: rgb(71, 175, 114);
+    font-size: 45px;
+}
+
+p, a, ul, ol, dl, li
+{
+    color: white;
+    font-size: 30px;
+}
+
+/* /css/global.css shared */
+
+a
+{
+    color: #4ade80;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a::after 
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0%;
+    background: #4ade80;
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+
+a:hover 
+{
+    color: #86efac;
+}
+
+a:hover::after 
+{
+    width: 100%;
+}
+
+/* BUTTONS */
+
+button 
+{
+    padding: 12px 24px;
+    background-color: #1cfa6d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+        
+button:hover {
+    background-color: #46da7c;
+    transform: scale(1.05); 
+}
+        
+button:active {
+    transform: scale(0.95);
+}
